@@ -1,0 +1,23 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "fg",
+    "longName": "Bookmarks_1_2",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Bookmarks_1_2",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
+    "uuid": "3ee2c5f6-dec0-4a80-90df-84236df80e45",
+    "versionLabel": "1.2",
+    "watchapp": {
+        "watchface": false
+    }
+}
