@@ -1,13 +1,3 @@
-/*
- TODO:
- - Ask if clear
- - clear single entry
- - show edit_pos
-*/
-
-
-
-
 #include "pebble.h"
 #include "set_book.h"
 

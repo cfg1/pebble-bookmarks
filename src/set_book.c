@@ -194,7 +194,11 @@ void load_settings_page(int index){
     
     
   } else {
-    text_layer_edit = text_layer_create(GRect(0,EDIT_FIELD_Y_POS,144,EDIT_FIELD_HEIGHT));
+    if (clear_mode_all){
+      text_layer_edit = text_layer_create(GRect(0,EDIT_FIELD_Y_POS-EDIT_FIELD_HEIGHT,144,EDIT_FIELD_HEIGHT*3));
+    } else {
+      text_layer_edit = text_layer_create(GRect(0,EDIT_FIELD_Y_POS,144,EDIT_FIELD_HEIGHT));
+    }
     text_layer_set_text_alignment(text_layer_edit, GTextAlignmentCenter); // Center the text.
     text_layer_set_font(text_layer_edit, fonts_get_system_font(FONT_KEY_GOTHIC_28_BOLD));
   }
@@ -215,7 +219,7 @@ void load_settings_page(int index){
       text_layer_set_text(text_layer_edit, int2str);
     }
     if (clear_mode_all){
-      text_layer_set_text(text_layer_edit, "Clear All ?\nPress Up to continue.");
+      text_layer_set_text(text_layer_edit, "Clear All ?\nPress Up to\ncontinue.");
     }
   }
   layer_add_child(window_get_root_layer(window_change_entry), text_layer_get_layer(text_layer_edit));
